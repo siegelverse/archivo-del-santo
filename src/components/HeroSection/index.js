@@ -4,9 +4,9 @@ import { Button } from '../ButtonElement'
 import { 
     HeroContainer, 
     HeroBg,  
+    ImgBg,
     HeroContent,
     LogoImg, 
-    HeroP, 
     HeroBtnWrapper, 
     ArrowForward, 
     ArrowRight
@@ -21,12 +21,11 @@ const HeroSection = () => {
 
     return (
         <HeroContainer>
-            <HeroBg />
+            <HeroBg>
+                <ImgBg />
+            </HeroBg>
             <HeroContent>
                 <LogoImg src={logo} />
-                {/* <HeroP>
-                    The Complete Santo Film Guide
-                </HeroP> */}
                 <HeroBtnWrapper>
                     <Button to="watch" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                         Start Watching {hover ? <ArrowForward /> : <ArrowRight />}
