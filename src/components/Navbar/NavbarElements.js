@@ -72,7 +72,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-    color: #fff; 
+    color: #FDD135; 
     display: flex; 
     align-items: center; 
     text-decoration: none; 
@@ -96,7 +96,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
-    background: #01bf71;
+    background: #67AB8E;
     white-space: nowrap;
     padding: 10px 22px;
     color: #010606;
@@ -109,7 +109,7 @@ export const NavBtnLink = styled(LinkR)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
+        background: #FDD135;
         color: #010606;
     }
 `;
