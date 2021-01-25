@@ -23,20 +23,44 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about'>About</NavLinks>
+                            <NavLinks 
+                            to='about'
+                            spy={true}
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            >About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='watch'>Watch</NavLinks>
+                            <NavLinks 
+                            to='watch'
+                            spy={true}
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            >Watch</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='contact'>Contact</NavLinks>
+                            <NavLinks 
+                            to='contact'
+                            spy={true}
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            >Contact</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='signup'>Sign Up</NavLinks>
+                            <NavLinks 
+                            to='signup'
+                            spy={true}
+                            smooth={true}
+                            offset={-80}
+                            duration={500}
+                            >Sign Up</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='signin'>Sign In</NavBtnLink>
+                        <NavBtnLink to='/signin'>Sign In</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer> 
             </Nav>    

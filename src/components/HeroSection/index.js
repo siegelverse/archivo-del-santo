@@ -27,7 +27,16 @@ const HeroSection = () => {
             <HeroContent>
                 <LogoImg src={logo} />
                 <HeroBtnWrapper>
-                    <Button to="watch" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+                    <Button 
+                    to="watch" 
+                    onMouseEnter={onHover} 
+                    onMouseLeave={onHover} 
+                    primary='true' 
+                    dark='true'
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}>
                         Start Watching {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
