@@ -1,5 +1,6 @@
 import React from 'react'
 import signupimg from '../../images/santo_car.jpg'
+import {  useHistory }  from 'react-router-dom'
 import { Button } from '../ButtonElement'
 import {
     SignupContainer,
@@ -18,6 +19,7 @@ import {
 
 
 const SignupSection = () => {
+    const history = useHistory()
     return (
         <>
             <SignupContainer id='signup'>
@@ -32,7 +34,7 @@ const SignupSection = () => {
                                     We'll also add you to our mailing list where we provide updates on future screenings, Santo history, and more.  
                                 </Subtitle>
                                 <BtnWrap>
-                                    <Button to="/signup" primary dark big>Sign Up</Button>
+                                    <Button onClick={() => history.push('/signup')} primary dark big >Sign Up</Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
