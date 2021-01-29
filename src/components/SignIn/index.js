@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { 
     Container, 
     FormWrap, 
@@ -12,17 +12,47 @@ import {
 } from './SigninElements'
 
 const SignIn = () => {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value)
+        console.log(email)
+    }
+
+    const handlePasswordChange = (e) => {
+        setPassword(e.target.value)
+        console.log(password)
+    }
+
+    const loginUser = async (e) => {
+        e.preventDefault() 
+
+        fetch('http://localhost:3000/users/login' , {
+            method: "POST", 
+            body: JSON.stringify({
+                email,
+                password
+            })
+        })
+        .then(res => res.json())
+        .then(user => {
+            console.log(user)
+        })
+    }
+    
+
     return (
         <>
             <Container>
                 <FormWrap>
                     <FormContent>
-                        <Form action="#">
+                        <Form onSubmit={(e) => loginUser(e)}>
                             <FormH1>Sign in to your account</FormH1>
-                            <FormLabel htmlFor='for'>Username</FormLabel>
-                            <FormInput type='username' required />
+                            <FormLabel htmlFor='for'>Email</FormLabel>
+                            <FormInput type='email' value={email} required onChange={(e) => handleEmailChange(e)} />
                             <FormLabel htmlFor='for'>Password</FormLabel>
-                            <FormInput type='password' required />
+                            <FormInput type='password' value={password} required onChange={(e) => handlePasswordChange(e)} />
                             <FormButton type='submit'>Continue</FormButton>
                             <Text>Don't have an account? Sign up <a href='/signup'>here</a></Text>
                         </Form>

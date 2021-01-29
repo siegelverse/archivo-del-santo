@@ -79,7 +79,7 @@ router.post('/users/me/avatar', auth, upload.single('avatar'), async (req, res) 
 
 router.patch('/users/update', auth, async (req, res) => {
     const updates = Object.keys(req.body)
-    const allowedUpdates = ['name', 'email', 'password', 'age']
+    const allowedUpdates = ['name', 'email', 'password']
     const isValidOperation = updates.every((update) => allowedUpdates.includes(update))
 
     if (!isValidOperation) {
