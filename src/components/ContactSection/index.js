@@ -9,7 +9,14 @@ import {
     Heading,
     Subtitle, 
     Column2,
+    FormContent,
+    FormWrap,
+    Form,
+    FormLabel,
+    FormInput,
+    FormButton,
 } from './ContactElements'
+
 
 
 const ContactSection = () => {
@@ -30,7 +37,19 @@ const ContactSection = () => {
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                            <h1>Form</h1>
+                        <FormWrap>
+                            <FormContent>
+                            <Form action='#'>
+                                <FormLabel htmlFor='for'>Name</FormLabel>
+                                <FormInput type='name' required />
+                                <FormLabel htmlFor='for'>Email</FormLabel>
+                                <FormInput type='email' required />
+                                <FormLabel htmlFor='for'>Message</FormLabel>
+                                <FormInput type='textarea' required />
+                                <FormButton type='submit'>Submit</FormButton>
+                            </Form>
+                            </FormContent>
+                        </FormWrap>
                         </Column2>
                     </ContactRow>
                 </ContactWrapper>

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import { 
     Container, 
     FormWrap, 
@@ -14,6 +15,7 @@ import {
 const SignIn = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const history = useHistory()
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value)
@@ -29,7 +31,11 @@ const SignIn = () => {
         e.preventDefault() 
 
         fetch('http://localhost:3000/users/login' , {
-            method: "POST", 
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }, 
             body: JSON.stringify({
                 email,
                 password
@@ -38,6 +44,7 @@ const SignIn = () => {
         .then(res => res.json())
         .then(user => {
             console.log(user)
+            history.push('/')
         })
     }
     

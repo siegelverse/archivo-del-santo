@@ -9,11 +9,11 @@ export const WatchContainer = styled.div`
     background: #010606;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        height: 1300px;
     }
 
     @media screen and (max-width: 480px;) {
-        height: 1300px;
+        height: 1400px;
     }
 `;
 
@@ -51,6 +51,10 @@ export const WatchCard = styled.div`
         transform: scale(1.02);
         transition: all 0.2s ease-in-out; 
         cursor: pointer; 
+    }
+
+    @media screen and (max-width: 480px) {
+        max-height: 300px;
     }
 `;
 

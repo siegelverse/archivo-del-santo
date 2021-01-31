@@ -1,10 +1,12 @@
 const express = require('express')
 require('./mongoose')
+const cors = require('cors')
 const userRouter = require('./routers/user')
 const reviewRouter = require('./routers/review')
 
 const app = express()
 const port = process.env.PORT || 3000
+
 
 
 const multer = require('multer')
@@ -16,6 +18,7 @@ app.post('/upload', upload.single('upload'), (req, res) => {
 })
 
 app.use(express.json())
+app.use(cors())
 app.use(userRouter)
 app.use(reviewRouter)
 
