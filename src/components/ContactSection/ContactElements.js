@@ -117,8 +117,6 @@ export const Form = styled.form`
     @media screen and (max-width: 400px) {
         padding: 32px 32px; 
     }
-
-
 `;
 
 export const FormLabel = styled.label`

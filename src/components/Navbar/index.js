@@ -12,7 +12,8 @@ import {
     NavBtnLink,
 } from './NavbarElements';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, user }) => {
+    console.log(user)
     return (
         <>
             <Nav>
@@ -60,7 +61,9 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+                        <NavBtnLink to='/signin'>
+                            {user ? `${user.name}` : 'Sign In'}
+                        </NavBtnLink>
                     </NavBtn>
                 </NavbarContainer> 
             </Nav>    

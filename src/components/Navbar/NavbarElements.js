@@ -85,6 +85,18 @@ export const NavLinks = styled(LinkS)`
     }
 `;
 
+export const ProfileIcon = styled.div`
+    display: block;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #67AB8E;
+
+`;
+
 export const NavBtn = styled.nav`
     display: flex; 
     align-items: center;

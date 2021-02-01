@@ -8,8 +8,9 @@ import WatchSection from '../components/WatchSection'
 import SignupSection from '../components/SignupSection'
 
 
-const Home = () => {
+const Home = ({ user }) => {
     const [isOpen, setIsOpen] = useState(false)
+    console.log(user)
 
     const toggle = () => {
         setIsOpen(!isOpen)
@@ -18,7 +19,7 @@ const Home = () => {
     return (
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
+            <Navbar toggle={toggle} user={user} />
             <HeroSection />
             <AboutSection />
             <WatchSection />

@@ -50,6 +50,7 @@ const SignUp = () => {
         })
         .then(res => res.json())
         .then(user => {
+            localStorage.setItem('token', user.token)
             history.push('/')
         })
     }

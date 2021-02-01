@@ -44,6 +44,7 @@ const SignIn = () => {
         .then(res => res.json())
         .then(user => {
             console.log(user)
+            localStorage.setItem('token', user.token)
             history.push('/')
         })
     }
