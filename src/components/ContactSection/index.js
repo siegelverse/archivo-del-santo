@@ -39,14 +39,14 @@ const ContactSection = () => {
                         <Column2>
                         <FormWrap>
                             <FormContent>
-                            <Form action='#'>
+                            <Form action='https://formspree.io/f/mvovyzyv' method="POST">
                                 <FormLabel htmlFor='for'>Name</FormLabel>
-                                <FormInput type='name' required />
+                                <FormInput type="text" name="name" required />
                                 <FormLabel htmlFor='for'>Email</FormLabel>
-                                <FormInput type='email' required />
+                                <FormInput type="email" name="_replyto" required />
                                 <FormLabel htmlFor='for'>Message</FormLabel>
-                                <FormInput type='textarea' required />
-                                <FormButton type='submit'>Submit</FormButton>
+                                <FormInput type='textarea' name="message" required />
+                                <FormButton type="submit" value="Send">Submit</FormButton>
                             </Form>
                             </FormContent>
                         </FormWrap>
