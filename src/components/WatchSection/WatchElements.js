@@ -68,4 +68,4 @@ export const WatchH1 = styled.h1`
     font-size: 3.5rem; 
     color: #FDD135;
     margin-bottom: 60px; 
-`
+`;

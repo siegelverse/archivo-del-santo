@@ -4,6 +4,8 @@ import Home from './pages';
 import React, { useEffect, useState } from 'react'
 import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
+import Movie1Page from './pages/movie1';
+import Movie2Page from './pages/movie2';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path='/' render={() => <Home user={user} />} exact />
         <Route path='/signin' component={SigninPage} />
         <Route path='/signup' component={SignupPage} />
+        <Route path='/watch/s-v-estrang' component={Movie1Page} />
+        <Route path='/watch/s-v-hacha' component={Movie2Page} />
       </Switch>
     </Router>
   );
