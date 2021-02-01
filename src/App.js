@@ -7,6 +7,7 @@ import SignupPage from './pages/signup';
 import Movie1Page from './pages/movie1';
 import Movie2Page from './pages/movie2';
 import Movie3Page from './pages/movie3';
+import Movie4Page from './pages/movie4';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path='/watch/s-v-estrang' component={Movie1Page} />
         <Route path='/watch/s-v-hacha' component={Movie2Page} />
         <Route path='/watch/s-v-villanos' component={Movie3Page} />
+        <Route path='/watch/s-v-zomb' component={Movie4Page} />
       </Switch>
     </Router>
   );

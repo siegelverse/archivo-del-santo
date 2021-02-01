@@ -26,11 +26,11 @@ const Movie1Info = () => {
             <Column2>
                 <InfoHeading>Crew</InfoHeading>
                 <InfoText>
-                    (Estudios América--Cin. Norte, 1963) Prod: Alberto López; Dir: René Cardona [Sr.]; 
-                    Scr:René Cardona [Sr.]; Story: Rafael García Travesi; Photo: Alfredo Uribe Jacome; 
-                    Music Dir: Enrico C. Cabiati; Prod Mgr: Luis García de León; Asst Dir: Tito Novaro; 
-                    Film Ed: José J. Munguía; Art Dir: Arcadi Artis Gener; Camera Op: Roberto Jaramillo; 
-                    Makeup: Antonio Ramírez; Sound Engin: Consuelo P. de Rendón; Music Rec: Heinrich Henkel; Union: STIC
+                    (Estudios América--Cin. Norte, 1963) PROD: Alberto López; DIR: René Cardona [Sr.]; 
+                    SCR:René Cardona [Sr.]; STORY: Rafael García Travesi; PHOTO: Alfredo Uribe Jacome; 
+                    MUSIC DIR: Enrico C. Cabiati; PROD MGR: Luis García de León; ASST DIR: Tito Novaro; 
+                    FILM ED: José J. Munguía; ART DIR: Arcadi Artis Gener; CAMERA OP: Roberto Jaramillo; 
+                    MAKEUP: Antonio Ramírez; SOUND ENG: Consuelo P. de Rendón; MUSIC REC: Heinrich Henkel; Union: STIC
                 </InfoText>
             </Column2>
             <Column3>

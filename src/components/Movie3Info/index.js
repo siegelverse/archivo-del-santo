@@ -26,11 +26,11 @@ const Movie3Info = () => {
             <Column2>
                 <InfoHeading>Crew</InfoHeading>
                 <InfoText>
-                    Alfonso Rosas Priego; Dir: Alfredo B. Crevenna; Scr; Rafael García Travesí;
-                    Story: R. García Travesí, Mario García Camberos; Photo: Jorge Stahl Jr.; 
-                    Music: Antonio Díaz Conde; Prod Co-ord: Alfonso Rosas Priego Jr.; 
-                    Prod Mgr: Mario García Camberos; Prod Chief: José Alcalde G.; 
-                    Sub-Dir: Felipe Palomino; Film Ed: Alfredo Rosas Prieg
+                    Alfonso Rosas Priego; DIR: Alfredo B. Crevenna; SCR; Rafael García Travesí;
+                    STORY: R. García Travesí, Mario García Camberos; PHOTO: Jorge Stahl Jr.; 
+                    MUSIC: Antonio Díaz Conde; PROD CO-ORD: Alfonso Rosas Priego Jr.; 
+                    PROD MGR: Mario García Camberos; PROD CHIEF: José Alcalde G.; 
+                    SUB-DIR: Felipe Palomino; FILM ED: Alfredo Rosas Prieg
                 </InfoText>
             </Column2>
             <Column3>

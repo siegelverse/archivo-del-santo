@@ -25,11 +25,11 @@ const Movie2Info = () => {
             <Column2>
                 <InfoHeading>Crew</InfoHeading>
                 <InfoText>
-                    (Filmica Vergara Cinecomisiones, 1964) Prod: Luis Enrique Vergara C.; Dir: José Díaz Morales; Scr: Rafael García Travesí; 
-                    Story: Rafael García Travesí, Fernando Osés; Photo: Eduardo Valdez; Music: Jorge Pérez Herrera; Prod Mgr: Roy Fletcher; 
-                    Prod Chief: José Rodríguez R.; Asst Dir: Angel Rodríguez; Film Ed/Sound Ed: José Juan Munguía; Camera Op: Dagobied Rodríguez; 
-                    Costumes: Bertha Mendoza López; Makeup: Armando Islas; Dialog Rec: Jesús Sánchez; Music/Re-Rec: Salvador Topete; 
-                    Recordist: Daniel Mercado Díaz; Union: STIC
+                    (Filmica Vergara Cinecomisiones, 1964) PROD: Luis Enrique Vergara C.; DIR: José Díaz Morales; SCR: Rafael García Travesí; 
+                    STORY: Rafael García Travesí, Fernando Osés; PHOTO: Eduardo Valdez; MUSIC: Jorge Pérez Herrera; PROD MGR: Roy Fletcher; 
+                    PROD CHIEF: José Rodríguez R.; ASST DIR: Angel Rodríguez; FILM ED/SOUND ED: José Juan Munguía; CAMERA OP: Dagobied Rodríguez; 
+                    COSTUMES: Bertha Mendoza López; MAKEUP: Armando Islas; DIALOG REC: Jesús Sánchez; MUSIC/RE-REC: Salvador Topete; 
+                    RECORDIST: Daniel Mercado Díaz; Union: STIC
                 </InfoText>
             </Column2>
             <Column3>
