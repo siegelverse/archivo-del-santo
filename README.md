@@ -2,7 +2,7 @@
 
   > The web's most complete archive of the Santo film collection.
   
-  ![logo](https://i.imgur.com/4TUrae6.png | width=100)
+  <img src='https://i.imgur.com/4TUrae6.png' width='100'>
   
   
   ## Live Site
