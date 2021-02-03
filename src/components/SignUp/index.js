@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import { IoMdArrowRoundBack } from 'react-icons/io'
 import { 
     Container, 
     FormWrap, 
@@ -9,7 +10,8 @@ import {
     FormContent, 
     FormH1, 
     FormInput, 
-    FormLabel 
+    FormLabel, 
+    Back
 } from '../SignIn/SigninElements'
 
 const SignUp = () => {
@@ -59,6 +61,9 @@ const SignUp = () => {
         <>
             <Container>
                 <FormWrap>
+                <Back to='/'>
+                    <IoMdArrowRoundBack size={40}/>
+                </Back>
                     <FormContent>
                         <Form onSubmit={(e) => loginUser(e)}>
                             <FormH1>Sign up to create an account</FormH1>

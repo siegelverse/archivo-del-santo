@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const MovieContainer = styled.div`
     height: 100vh;
@@ -23,6 +24,40 @@ export const VideoWrapper = styled.div`
     
     @media screen and (max-width: 768px) {
         display: none;
+    }
+`;
+
+export const MobileVid = styled.a`
+    display: none;
+
+    
+    @media screen and (max-width: 768px) {
+        display: block;
+        margin-left: 16px;
+        color: #FDD135;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.02);
+            transition: all 0.2s ease-in-out; 
+            cursor: pointer; 
+        }
+    }
+`;
+
+export const Back = styled(Link)`
+    width: 1100px;
+    margin-left: 32px;
+    color: #FDD135;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out; 
+        cursor: pointer; 
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-left: 16px;
     }
 `;
 

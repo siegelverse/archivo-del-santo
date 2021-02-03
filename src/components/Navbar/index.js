@@ -18,7 +18,9 @@ const Navbar = ({ toggle, user }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>Hi</NavLogo>
+                    <NavLogo to='/'>
+                        Hi
+                    </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>

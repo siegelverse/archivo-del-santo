@@ -24,6 +24,23 @@ export const FormWrap = styled.div`
     }
 `;
 
+export const Back = styled(Link)`
+    width: 1100px;
+    margin-left: 32px;
+    margin-top: 32px;
+    color: #FDD135;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out; 
+        cursor: pointer; 
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-left: 16px;
+    }
+`;
+
 export const FormContent = styled.div`
     height: 100%;
     display: flex; 
