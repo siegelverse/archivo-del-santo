@@ -19,7 +19,12 @@ const Navbar = ({ toggle, user }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>
+                    <NavLogo 
+                    to='home' 
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}>
                         <img src={navicon} alt='icon' width='35px'/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
