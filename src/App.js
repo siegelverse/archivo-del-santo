@@ -14,7 +14,7 @@ function App() {
   const [user, setUser] = useState(null)
   
   const fetchUser = () => {
-    fetch('http://localhost:3000/users/me', {
+    fetch('https://archivo-del-santo.herokuapp.com/users/me', {
       headers: {
         'Authorization': `Bearer ${localStorage.token}`
       }
