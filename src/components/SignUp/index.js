@@ -38,7 +38,7 @@ const SignUp = () => {
     const loginUser = async (e) => {
         e.preventDefault() 
 
-        fetch('http://localhost:3000/users' , {
+        fetch('https://archivo-del-santo.herokuapp.com/users' , {
             method: "POST", 
             headers: {
                 'Content-Type': 'application/json',
