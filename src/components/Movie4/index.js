@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactPlayer from 'react-player'
 import { IoMdArrowRoundBack } from 'react-icons/io'
 import { FiYoutube } from 'react-icons/fi'
@@ -11,6 +11,9 @@ import {
 } from '../Movie1/MovieElements'
 
 const Movie4 = () => {
+    useEffect( () => {
+        window.scrollTo(0, 0);
+    },[]);
     return (
         <MovieContainer>
             <Back to='/'>

@@ -48,6 +48,9 @@ export const TextWrapper = styled.div`
     max-width: 540px; 
     padding-top: 0;
     padding-bottom: 60px; 
+    @media screen and (max-width: 480px) {
+        padding-bottom: 0px; 
+    }
 `;
 
 export const TopLine = styled.p`
@@ -115,7 +118,8 @@ export const Form = styled.form`
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
     @media screen and (max-width: 400px) {
-        padding: 32px 32px; 
+        padding: 32px 24px; 
+        padding-bottom: 24px;
     }
 `;
 
