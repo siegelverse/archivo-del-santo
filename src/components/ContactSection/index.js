@@ -31,7 +31,7 @@ const ContactSection = () => {
                                 <Heading>Want To Know More?</Heading>
                                 <Subtitle>
                                     This website was created by Marcus Siegel with artwork by Ishaq Fahim. 
-                                    Marcus is currently seeking employment opportunities in Frontend Development. 
+                                    Marcus is always looking to help with Frontend Development projects. 
                                     Fill out the form if you'd like to stay in touch, or if you have any Santo info we might've missed!
                                 </Subtitle>
                             </TextWrapper>
