@@ -20,11 +20,11 @@ const Movie2 = () => {
                 <IoMdArrowRoundBack size={40}/>
             </Back>
             <MovieH1>Santo Contra El Hacha Diabólica</MovieH1>
-            <MobileVid href='https://www.youtube.com/watch?v=w9yrLkKH0iM&ab_channel=DescargasSkydrive'>
+            <MobileVid href='https://youtu.be/w9yrLkKH0iM'>
                 <FiYoutube size={70} />
             </MobileVid>
             <VideoWrapper>
-                <ReactPlayer url='https://www.youtube.com/watch?v=w9yrLkKH0iM&ab_channel=DescargasSkydrive' controls='true' />
+                <ReactPlayer url='https://youtu.be/w9yrLkKH0iM' controls='true' />
             </VideoWrapper>
         </MovieContainer>
     )
