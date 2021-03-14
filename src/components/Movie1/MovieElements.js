@@ -2,15 +2,19 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const MovieContainer = styled.div`
-    height: 100vh;
+    margin-top: 60px;
     display: flex;
+    width: 100vw;
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     background: #010606;
 
     @media screen and (max-width: 768px) {
-        width: 100%;
+        width: 100vw;
+        margin-top: 0;
+        height: 400px;
+        
     }
 `;
 
@@ -57,6 +61,7 @@ export const Back = styled(Link)`
     }
 
     @media screen and (max-width: 480px) {
+        display: none;
         margin-left: 16px;
     }
 `;
@@ -67,6 +72,6 @@ export const MovieH1 = styled.h1`
     margin-bottom: 60px; 
 
     @media screen and (max-width: 768px) {
-        font-size: 2rem;
+        font-size: 24px;
     }
 `;

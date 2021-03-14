@@ -127,6 +127,7 @@ export const FormLabel = styled.label`
     margin-bottom: 8px;
     font-size: 14px; 
     color: #000; 
+    background: inherit;
 `; 
 
 export const FormInput = styled.input`
@@ -134,6 +135,7 @@ export const FormInput = styled.input`
     margin-bottom: 20px; 
     border: none; 
     border-radius: 4px; 
+    background: white;
 `; 
 
 export const FormButton = styled.button`
